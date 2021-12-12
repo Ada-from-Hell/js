@@ -1,0 +1,36 @@
+<!--Задание No1. Дочерние элементы в DOM.
+Для страницы:
+    <html>
+    <body>
+    <div>Пользователи:</div>
+    <ul>
+        <li>Джон</li>
+        <li>Пит</li>
+    </ul>
+    </body>
+    </html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дочерние элементы в DOM</title>
+</head>
+<body>
+<div>Пользователи:</div>
+<ul>
+    <li>Джон</li>
+    <li>Пит</li>
+</ul>
+
+<script>
+    // 1) Напишите код, который получит элемент <div>?
+    let div = document.body.childNodes[1];
+
+    // 2) Напишите код, который получит <ul>?
+    let ul = document.body.childNodes[3];
+
+    // 3) Напишите код, который получит второй <li> (с именем Пит)?
+    let li2 = document.body.getElementsByTagName('li')[1];
+</script>
+</body>
+</html>

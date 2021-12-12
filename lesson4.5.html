@@ -1,0 +1,33 @@
+<!--Задание No5. Создайте список
+Напишите интерфейс для создания списка.
+Для каждого пункта:
+1. Запрашивайте содержимое пункта у пользователя с помощью prompt.
+2. Создавайте элемент <li> и добавляйте его к <ul>.
+3. Процесс прерывается, когда пользователь нажимает Esc или вводит пустую
+строку.
+Все элементы должны создаваться динамически.
+Если пользователь вводит HTML-теги -– пусть в списке они показываются как обычный
+текст.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Создание списка</title>
+</head>
+<body>
+
+<script>
+    let ul = document.createElement('ul');
+    document.body.append(ul);
+    while (true) {
+        let data = prompt("Введите что-то");
+        if (!data) {
+            break;
+        }
+        let li = document.createElement('li');
+        li.textContent = data;
+        ul.append(li);
+    }
+</script>
+</body>
+</html>

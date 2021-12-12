@@ -1,0 +1,25 @@
+<!--Задание No4. Очистите элемент
+Создайте функцию clear(elem), которая удаляет всё содержимое из elem.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Очистка элемента</title>
+</head>
+<body>
+<ol id="elem">
+    <li>Привет</li>
+    <li>Мир</li>
+</ol>
+
+<script>
+    function clear(elem) {
+        let ol = document.querySelector('ol');
+        ol.innerHTML = '';
+        alert(ol.innerHTML);
+    }
+    clear(elem); // очищает список
+</script>
+</body>
+</html>
